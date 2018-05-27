@@ -7,14 +7,14 @@ import { NavigationComponent} from './navigation/navigation.component';
 
 import {RouterModule, Routes} from '@angular/router';
 import {DetailPages} from './detailPages/detailPages';
-import {NonePlayerCharacterComponent} from './detailPages/nonePlayerCharacter/nonePlayerCharacter.component';
-import {PlayerCharacterComponent} from './detailPages/playerCharacter/playerCharacter.component';
+import {NonePlayerCharacterPageComponent} from './detailPages/nonePlayerCharacterPage/nonePlayerCharacterPage.component';
+import {PlayerCharacterPageComponent} from './detailPages/playerCharacterPage/playerCharacterPage.component';
 
 const appRoutes: Routes = [
-	{ path: 'npc', component: NonePlayerCharacterComponent },
-	{ path: 'npc/:id', component: NonePlayerCharacterComponent },
-	{ path: 'pc', component: PlayerCharacterComponent },
-	{ path: 'pc/:id', component: PlayerCharacterComponent },
+	{ path: 'npc', component: NonePlayerCharacterPageComponent },
+	{ path: 'npc/:id', component: NonePlayerCharacterPageComponent },
+	{ path: 'pc', component: PlayerCharacterPageComponent },
+	{ path: 'pc/:id', component: PlayerCharacterPageComponent },
 ];
 
 @NgModule({
